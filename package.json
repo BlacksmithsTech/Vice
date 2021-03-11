@@ -1,0 +1,32 @@
+{
+  "name": "@blacksmithstech/vice",
+  "version": "1.0.0",
+  "description": "Modern CSS framework based on CSSGrid",
+  "main": "vice.scss",
+  "unpkg": "css/vice.css",
+  "style": "css/vice.min.css",
+  "scripts": {
+    "sass-build": "sass --no-source-map vice.scss css/vice.css && sass --no-source-map vice.scss css/vice.min.css --style=compressed",
+    "sass-watch": "npm run sass-build -- --watch",
+    "start": "npm run sass-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlacksmithsTech/Vice.git"
+  },
+  "author": "Blacksmiths Technology Ltd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlacksmithsTech/Vice/issues"
+  },
+  "homepage": "https://github.com/BlacksmithsTech/Vice#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "cssgrid"
+  ],
+  "dependencies": {}
+}

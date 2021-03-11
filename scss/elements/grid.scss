@@ -1,0 +1,52 @@
+@import "../utilities/mixins.scss";
+@import "../utilities/initial-variables.scss";
+
+.bt-grid {
+    display: grid;
+    grid-column-gap: $space-between-elements-h;
+    grid-row-gap: $space-between-elements-v;
+
+    position: relative;
+
+    @include defaultGridClasses;
+
+    > div { // Only divs count as child elements in this version
+        @include defaultChildClasses;
+
+        overflow: hidden;
+
+        &.stretch-h {
+            // Default behaviour
+            justify-self: unset !important;
+        }
+
+        &.stretch-v {
+            // Default behaviour
+            align-self: unset !important;
+        }
+
+        &.left {
+            justify-self: start;
+        }
+
+        &.centre, &.center { // Cater for both British English and American English
+            justify-self: center;
+        }
+
+        &.right {
+            justify-self: end;
+        }
+
+        &.top {
+            align-self: start;
+        }
+
+        &.middle {
+            align-self: center;
+        }
+
+        &.bottom {
+            align-self: end;
+        }
+    }
+}
