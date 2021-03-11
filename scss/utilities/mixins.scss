@@ -1,0 +1,56 @@
+@mixin setColumn($column) {
+    grid-column-start: $column;
+}
+
+@mixin setRow($row) {
+    grid-row-start: $row;
+}
+
+@mixin setGridColumnTemplate($totalColumns) {
+    grid-template-columns: repeat($totalColumns, 1fr);
+}
+
+@mixin setGridRowTemplate($totalRows) {
+    grid-template-rows: repeat($totalRows, 1fr);
+}
+
+@mixin setSpanCols($cols) {
+    grid-column-end: span $cols;
+}
+
+@mixin setSpanRows($rows) {
+    grid-row-end: span $rows;
+}
+
+@mixin defaultGridClasses() {
+    @for $i from 1 through 6 {
+        &.cols-#{$i} {
+            @include setGridColumnTemplate($i);
+        }
+
+        &.rows-#{$i} {
+            @include setGridRowTemplate($i);
+        }
+
+    }
+}
+
+@mixin defaultChildClasses() {
+    @for $i from 1 through 6 {
+        &.col-#{$i} {
+            @include setColumn($i);
+        }
+
+        &.row-#{$i} {
+            @include setRow($i);
+        }
+
+        &.span-cols-#{$i} {
+            @include setSpanCols($i);
+        }
+
+        &.span-rows-#{$i} {
+            @include setSpanRows($i);
+        }
+    }
+}

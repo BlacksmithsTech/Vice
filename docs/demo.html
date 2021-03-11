@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Blacksmiths Technology - Vice</title>
+        <link rel="stylesheet" href="../css/vice.css">
+        <link rel="stylesheet" href="demo.css">
+    </head>
+    <body>
+        <div class="demo-container">
+            <h2>Rows and Columns</h2>
+            <p>Simple example of rows and columns.</p>
+            <div class="bt-grid cols-2 rows-2">
+                <div class="col-1 row-1 grid-child child-one">Col: 1, Row: 1</div>
+                <div class="col-1 row-2 grid-child child-two">Col: 1, Row: 2</div>
+                <div class="col-2 row-1 grid-child child-three">Col: 2, Row: 1</div>
+                <div class="col-2 row-2 grid-child child-four">Col: 2, Row: 2</div>
+            </div>
+            <h2>Horizontal Alignment</h2>
+            <p>Examples of the possible horizontal alignments available in Vice.</p>
+            <div class="bt-grid cols-2 rows-2">
+                <div class="col-1 row-1 right grid-child child-one">Right</div>
+                <div class="col-1 row-2 left grid-child child-two">Left</div>
+                <div class="col-2 row-1 center grid-child child-three">Center</div>
+                <div class="col-2 row-2 grid-child child-four">Stretch</div>
+            </div>
+            <h2>Vertical Alignment</h2>
+            <p>Examples of the possible vertical alignments available in Vice.</p>
+            <div class="bt-grid cols-2 rows-2">
+                <div class="col-1 row-1 top grid-child child-one">Top</div>
+                <div class="col-1 row-2 bottom grid-child child-two">Bottom</div>
+                <div class="col-2 row-1 middle grid-child child-three">Middle</div>
+                <div class="col-2 row-2 grid-child child-four">Stretch</div>
+            </div>
+            <h2>Combo Alignment</h2>
+            <p>Examples of the possible alignment combinations available in Vice.</p>
+            <div class="bt-grid cols-2 rows-2">
+                <div class="col-1 row-1 top left grid-child child-one">Top/Left</div>
+                <div class="col-1 row-2 bottom center grid-child child-two">Bottom/Center</div>
+                <div class="col-2 row-1 middle center grid-child child-three">Middle/Center</div>
+                <div class="col-2 row-2 top right grid-child child-four">Top/Right</div>
+            </div>
+            <h2>Multiple Children</h2>
+            <p>Example of multiple children occupying one cell with alignments.</p>
+            <div class="bt-grid cols-2 rows-2">
+                <div class="col-2 row-2 top left grid-child child-one">Top/Left</div>
+                <div class="col-2 row-2 bottom center grid-child child-two">Bottom/Center</div>
+                <div class="col-2 row-2 middle center grid-child child-three">Middle/Center</div>
+                <div class="col-2 row-2 top right grid-child child-four">Top/Right</div>
+            </div>
+            <h2>Column Spanning</h2>
+            <p>Example of column spanning.</p>
+            <div class="bt-grid cols-3 rows-2">
+                <div class="col-1 row-1 span-cols-2 grid-child child-one">Col: 1, Row: 1, Col Span: 2</div>
+                <div class="col-3 row-1 grid-child child-two">Col: 3, Row: 1</div>
+                <div class="col-1 row-2 grid-child child-three">Col: 1, Row: 2</div>
+                <div class="col-2 row-2 grid-child child-four">Col: 2, Row: 2</div>
+                <div class="col-3 row-2 grid-child child-five">Col: 3, Row: 2</div>
+            </div>
+            <h2>Row Spanning</h2>
+            <p>Example of row spanning.</p>
+            <div class="bt-grid cols-3 rows-2">
+                <div class="col-1 row-1 grid-child child-one">Col: 1, Row: 1</div>
+                <div class="col-2 row-1 span-rows-2 grid-child child-two">Col: 2, Row: 1, Row Span: 2</div>
+                <div class="col-3 row-1 grid-child child-three">Col: 3, Row: 1</div>
+                <div class="col-1 row-2 grid-child child-four">Col: 1, Row: 2</div>
+                <div class="col-3 row-2 grid-child child-five">Col: 3, Row: 2</div>
+            </div>
+        </div>
+    </body>
+</html>
