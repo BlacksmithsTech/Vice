@@ -1,17 +1,25 @@
-@import "../utilities/mixins.scss";
-@import "../utilities/initial-variables.scss";
+//@use "../utilities/mixins";
+//@use "../utilities/initial-variables";
 
-.bt-grid {
+@use "../utilities";
+
+@mixin addDefaultClasses {
+    .bt-grid {
+        @include asGrid;
+    }
+}
+
+@mixin asGrid {
     display: grid;
-    grid-column-gap: $space-between-elements-h;
-    grid-row-gap: $space-between-elements-v;
+    grid-column-gap: utilities.$space-between-elements-h;
+    grid-row-gap: utilities.$space-between-elements-v;
 
     position: relative;
 
-    @include defaultGridClasses;
+    @include utilities.defaultGridClasses;
 
     > div { // Only divs count as child elements in this version
-        @include defaultChildClasses;
+        @include utilities.defaultChildClasses;
 
         overflow: hidden;
 

@@ -1,3 +1,4 @@
+/* Vice Utilities */
 /* Vice Elements */
 .bt-grid {
   display: grid;
@@ -140,5 +141,3 @@
 .bt-grid > div.bottom {
   align-self: end;
 }
-
-/* Vice Utilities */

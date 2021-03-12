@@ -6,7 +6,7 @@
   "unpkg": "css/vice.css",
   "style": "css/vice.min.css",
   "scripts": {
-    "sass-build": "sass --no-source-map vice.scss css/vice.css && sass --no-source-map vice.scss css/vice.min.css --style=compressed",
+    "sass-build": "sass --no-source-map vice.scss css/vice.css",
     "sass-watch": "npm run sass-build -- --watch",
     "start": "npm run sass-watch"
   },
@@ -27,6 +27,13 @@
     "css",
     "sass",
     "cssgrid"
+  ],
+  "files": [
+    "css",
+    "scss",
+    "vice.scss",
+    "LISCENSE",
+    "README.ms"
   ],
   "dependencies": {}
 }

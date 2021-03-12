@@ -1,0 +1,6 @@
+@forward "elements";
+@use "elements";
+
+@mixin addDefaultClasses {
+    @include elements.grid-addDefaultClasses;
+}
